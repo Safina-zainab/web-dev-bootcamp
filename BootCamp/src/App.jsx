@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, CssBaseline, Typography, Accordion, AccordionSummary, AccordionDetails, Link, Box, AppBar, Toolbar } from '@mui/material';
+import { Container, CssBaseline, Typography, Accordion, AccordionSummary, AccordionDetails, Link, Box, AppBar, Toolbar, Button } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -10,9 +10,12 @@ function NavBar() {
   return (
     <AppBar position="static">
       <Toolbar>
-        <Typography variant="h6">
+        <Typography variant="h6" style={{ flexGrow: 1 }}>
           Safina's CodeCraft Academy
         </Typography>
+        <Button color="success" variant="contained" href="https://forms.gle/QxuizoudfqsbsFZ37" target="_blank">
+          Enroll Now
+        </Button>
       </Toolbar>
     </AppBar>
   );
